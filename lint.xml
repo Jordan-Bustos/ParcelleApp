@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/view/activity/PlotCameraActivity.java" />
+    </issue>
+    <issue id="ViewConstructor">
+        <ignore path="src/business/CameraPreview.java" />
+    </issue>
+</lint>

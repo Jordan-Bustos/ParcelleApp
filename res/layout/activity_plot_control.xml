@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PlotControlActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:text="@string/densite_de_semis"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/densityVal"
+        android:layout_toRightOf="@+id/densityVal"
+        android:text="@string/grainsm2"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/ecartementVal"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/densityVal"
+        android:layout_below="@+id/TextView02"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="9" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/densityVal"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/TextView02"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="9" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/densityVal"
+        android:text="@string/ecartement_"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ecartementVal"
+        android:layout_alignLeft="@+id/TextView01"
+        android:text="@string/_g"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/ecartementVal"
+        android:layout_marginTop="40dp"
+        android:text="@string/nombre_de_rangs_m2" 
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/nbRangVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ecartementVal"
+        android:layout_centerVertical="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/nbRangVal"
+        android:layout_marginTop="36dp"
+        android:text="@string/nombre_de_grains_m2" 
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/nbGrainsVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nbRangVal"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="17dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/nbGrainsUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nbGrainsVal"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="@string/grains_m2" />
+
+    <TextView
+        android:id="@+id/nbRangUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/nbGrainsUnit"
+        android:text="@string/rangs_m2" />
+
+</RelativeLayout>

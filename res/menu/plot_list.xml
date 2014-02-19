@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_add"
+        android:icon="@drawable/addmenu"
+        android:showAsAction="ifRoom"
+        android:title=""/>
+    <item
+        android:id="@+id/action_menu"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu">
+        <menu>
+            <item
+                android:id="@+id/action_convertisseur"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:title="@string/convertisseurs"/>
+            <item
+                android:id="@+id/action_commande"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:title="@string/commande"/>
+            <item
+                android:id="@+id/action_controle"
+                android:orderInCategory="100"
+                android:showAsAction="never"
+                android:title="@string/ctrle"/>
+        </menu>
+    </item>
+</menu>

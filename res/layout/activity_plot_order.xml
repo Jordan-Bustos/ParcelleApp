@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PlotOrderActivity" >
+
+    <EditText
+        android:id="@+id/densityVal"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:ems="10" 
+        android:layout_centerInParent="true" 
+        android:inputType="number"
+        android:maxLength="9"/>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/densityVal"
+        android:layout_marginTop="21dp"
+        android:textSize="16sp"
+        android:text="@string/surface" />
+
+    <EditText
+        android:id="@+id/ecartementVal"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/densityVal"
+        android:layout_below="@+id/TextView02"
+        android:ems="10"
+        android:inputType="number" 
+        android:maxLength="9"/>
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ecartementVal"
+        android:textSize="14sp"
+        android:layout_alignLeft="@+id/TextView01"
+        android:text="@string/ha" />
+
+    <TextView
+        android:id="@+id/resultat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView04"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView02"
+        android:layout_toRightOf="@+id/densityVal"
+        android:text="@string/kg_ha"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/conditionment"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ecartementVal"
+        android:layout_below="@+id/TextView04"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="9" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/conditionment"
+        android:layout_alignLeft="@+id/TextView03"
+        android:text="@string/kg_sacs"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="@string/nombre_a_commander"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/unite_sacs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resultat_sacs"
+        android:layout_alignBottom="@+id/resultat_sacs"
+        android:layout_toRightOf="@+id/conditionment"
+        android:text="@string/sacs"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/resultat_sacs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text=""
+        android:textSize="14sp" />
+
+    <ImageButton
+        android:id="@+id/image_plot_context_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TextView02"
+        android:layout_toRightOf="@+id/TextView01"
+        android:contentDescription="@string/plotimage"
+        android:maxHeight="50sp"
+        android:maxWidth="50sp"
+        android:src="@drawable/img_plot_context_menu" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/TextView05"
+        android:layout_marginTop="42dp"
+        android:text="@string/poids_de_semences_necessaires"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/image_plot_context_menu"
+        android:text="@string/conditionnement"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_ctrl"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="35sp"
+        android:text="@string/controle" />
+
+</RelativeLayout>
